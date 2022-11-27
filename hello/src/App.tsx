@@ -85,7 +85,6 @@ export default function App() {
       <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap="0px" gridAutoRows="20px">
         <HeatMapField value={"Supplier name"} background={"#b1f3e7"} style={{ textAlign: 'left', fontWeight: 'bold', width: '100px' }} />
         {businessUnits.map((bu, index) => {
-
           return (
             <HeatMapField value={bu.businessUnitBuId} background={"#b1f3e7"} style={{ fontWeight: 'bold' }} />
           )
@@ -117,21 +116,11 @@ export default function App() {
           })
         }
         <HeatMapField value={supplierValuesSum} background={"#b1f3e7"} style={{ textAlign: 'right', fontWeight: 'bold', width: '100px' }} />
-
       </Box>
 
-      <Box sx={{ my: 4 }}>
-        {/* <Typography variant="h4" component="h1" gutterBottom>
-          Create React App example with TypeScript
-        </Typography> */}
-
-        {/* <HeatMapField value={"1"} background={"red"}></HeatMapField>
-        <HeatMapField value={"1"} background={"yellow"}></HeatMapField>
-        <HeatMapField value={"1"} background={null}></HeatMapField> */}
-
-
-        <MyResponsiveHeatMap />
-      </Box>
+      {/* <Box sx={{ my: 4 }}>
+              <MyResponsiveHeatMap />
+      </Box> */}
     </Container>
   );
 }
