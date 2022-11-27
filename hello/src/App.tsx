@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import {MyResponsiveHeatMap} from './components/ResponsiveHeatMap';
+import HeatMapField from './components/Field';
 
 
 export default function App() {
@@ -13,6 +14,11 @@ export default function App() {
         {/* <Typography variant="h4" component="h1" gutterBottom>
           Create React App example with TypeScript
         </Typography> */}
+        <HeatMapField value={"1"} background={"red"}></HeatMapField>
+        <HeatMapField value={"1"} background={"yellow"}></HeatMapField>
+        <HeatMapField value={"1"} background={null}></HeatMapField>
+
+
         <MyResponsiveHeatMap />
       </Box>
     </Container>
